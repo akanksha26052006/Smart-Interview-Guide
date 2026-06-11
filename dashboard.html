@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Interview Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Interview Guide</h1>
+    <nav>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h2>Interview Topics</h2>
+    <div class="topics">
+      <div class="card">
+        <h3>Data Structures</h3>
+        <p>Explore essential DS concepts like arrays, stacks, and linked lists.</p>
+      </div>
+      <div class="card">
+        <h3>Algorithms</h3>
+        <p>Master sorting, searching, and optimization problems.</p>
+      </div>
+      <div class="card">
+        <h3>HR Questions</h3>
+        <p>Practice behavioral and situational interview questions.</p>
+      </div>
+    </div>
+
+    <h2>Quick Quiz</h2>
+    <div class="quiz">
+      <p id="question">Loading question...</p>
+      <button onclick="checkAnswer('A')">Option A</button>
+      <button onclick="checkAnswer('B')">Option B</button>
+      <button onclick="checkAnswer('C')">Option C</button>
+    </div>
+  </section>
+
+  <script>
+    // Logout logic
+    document.getElementById('logoutBtn').onclick = function() {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "login.html";
+    };
+
+    // Simple quiz logic
+    const questions = [
+      { q: "What is the time complexity of binary search?", a: "O(log n)" },
+      { q: "Which data structure is used for BFS?", a: "Queue" },
+      { q: "What keyword is used to create a class in JS?", a: "class" }
+    ];
+
+    let index = 0;
+    document.getElementById('question').innerText = questions[index].q;
+
+    function checkAnswer(ans) {
+      alert("Correct answer: " + questions[index].a);
+      index = (index + 1) % questions.length;
+      document.getElementById('question').innerText = questions[index].q;
+    }
+  </script>
+</body>
+</html>

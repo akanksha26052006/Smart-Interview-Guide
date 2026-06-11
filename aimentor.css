@@ -1,0 +1,180 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f8f9fc;
+  color: #222;
+  transition: background 0.4s, color 0.4s;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0056ff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn.primary { background: #007bff; color: #fff; }
+.btn.primary:hover { background: #0056d1; }
+
+.btn.secondary { background: #e9ecef; color: #333; }
+.btn.ghost { background: transparent; color: #007bff; }
+
+.btn.small { font-size: 0.85rem; margin-top: 8px; }
+
+.feature-detail {
+  text-align: center;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.topic-btn {
+  background: #eef2ff;
+  color: #0044cc;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.topic-btn:hover {
+  background: #dbe4ff;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 260px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.chat-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  height: 300px;
+  overflow-y: auto;
+  padding: 12px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.bot-message, .user-message {
+  background: #eef2ff;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 80%;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.user-message {
+  background: #007bff;
+  color: #fff;
+  align-self: flex-end;
+  float: right;
+  clear: both;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input-area input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.progress-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #e9ecef;
+  border-radius: 20px;
+  height: 8px;
+  width: 80%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.progress {
+  background: #007bff;
+  width: 0%;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.dark-mode header {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode .card,
+.dark-mode .chat-container {
+  background: #1e1e1e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

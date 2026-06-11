@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Interview Guide — Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">★</div>
+        <div class="title">Smart Interview Guide</div>
+      </div>
+      <div class="nav-actions">
+        <button class="btn ghost" id="signInBtn">Sign In</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Master Your Interview Prep with AI</h1>
+        <p>Combine personalized learning, AI-powered mentoring, and gamified progress tracking to ace your next technical interview.</p>
+        <div class="cta">
+          <button class="btn">Get Started Free</button>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+
+        <!-- Structured Learning -->
+        <a href="learning.html" class="card link-card">
+          <div class="icon">📘</div>
+          <h3>Structured Learning</h3>
+          <p>Master Data Structures, Algorithms, System Design, and more with comprehensive topic modules and interactive quizzes.</p>
+        </a>
+
+        <!-- AI Mentor -->
+        <a href="aimentor.html" class="card link-card">
+          <div class="icon">✨</div>
+          <h3>AI Mentor</h3>
+          <p>Get instant explanations, personalized feedback, and smart topic suggestions powered by advanced AI.</p>
+        </a>
+
+        <!-- Mock Interviews -->
+        <a href="mockinterview.html" class="card link-card">
+          <div class="icon">💬</div>
+          <h3>Mock Interviews</h3>
+          <p>Practice with realistic technical and behavioral questions, including company-specific interview prep.</p>
+        </a>
+
+        <!-- Gamification -->
+        <a href="gamification.html" class="card link-card">
+          <div class="icon">🏆</div>
+          <h3>Gamification</h3>
+          <p>Stay motivated with badges, levels, streaks, and daily challenges that make learning fun and engaging.</p>
+        </a>
+
+        <!-- Progress Tracking -->
+        <a href="progress.html" class="card link-card">
+          <div class="icon">📈</div>
+          <h3>Progress Tracking</h3>
+          <p>Visualize your improvement with detailed analytics, personalized career paths, and mood tracking.</p>
+        </a>
+
+        <!-- Community -->
+        <a href="community.html" class="card link-card">
+          <div class="icon">👥</div>
+          <h3>Community</h3>
+          <p>Connect with fellow learners, share tips, find study partners, and celebrate success stories together.</p>
+        </a>
+
+      </section>
+
+      <!-- Big Call-To-Action -->
+      <section class="big-cta center">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Join thousands of learners preparing smarter for their dream jobs</p>
+        <button class="btn">Start Learning Now</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- Chatbot Button -->
+  <button id="chatbotBtn" class="chatbot-btn">💬</button>
+
+  <!-- Chatbot Popup -->
+  <div id="chatbotPopup" class="chatbot-popup">
+    <div class="chatbot-header">
+      AI Assistant
+      <span id="closeBtn">&times;</span>
+    </div>
+    <div class="chatbot-body" id="chatbotBody">
+      <div class="bot-message">Hi! I'm your AI assistant. Ask me any interview question.</div>
+    </div>
+    <input type="text" id="userInput" placeholder="Type a question..." autocomplete="off">
+    <button id="sendBtn">Send</button>
+    <div id="suggestions" class="suggestions"></div>
+  </div>
+
+  <!-- Sign-In Modal -->
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeSignIn">&times;</span>
+      <h2>Sign In</h2>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button id="loginBtn" class="btn">Login</button>
+      <div id="loginMessage" style="margin-top:10px;color:red;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

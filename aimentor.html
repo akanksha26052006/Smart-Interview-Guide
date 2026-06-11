@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Mentor — Smart Interview Guide</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="aimentor.css">
+</head>
+<body class="light-mode">
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">★</div>
+        <div class="title">Smart Interview Guide</div>
+      </div>
+      <div class="nav-actions">
+        <!-- <a href="index.html" class="btn ghost">🏠 Home</a> -->
+        <button id="theme-toggle" class="btn secondary">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="feature-detail">
+        <h1>✨ AI Mentor</h1>
+        <p>Your smart assistant for interview prep — get topic-wise help, quick answers, and personalized advice.</p>
+
+        <!-- Topic Suggestions -->
+        <div class="topics">
+          <h3>💡 Quick Topics</h3>
+          <div class="topic-list">
+            <button class="topic-btn">Data Structures</button>
+            <button class="topic-btn">Algorithms</button>
+            <button class="topic-btn">System Design</button>
+            <button class="topic-btn">Behavioral Questions</button>
+            <button class="topic-btn">OOP Concepts</button>
+            <button class="topic-btn">DBMS</button>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+          <div class="card">
+            <h4>📘 Resume Tips</h4>
+            <p>Learn how to make your resume stand out to recruiters.</p>
+            <button class="btn small">Explore</button>
+          </div>
+          <div class="card">
+            <h4>💬 Mock Interviews</h4>
+            <p>Practice with AI-powered mock interviews and feedback.</p>
+            <button class="btn small">Start</button>
+          </div>
+          <div class="card">
+            <h4>📊 Track Progress</h4>
+            <p>Visualize your learning journey with milestones and badges.</p>
+            <button class="btn small">View</button>
+          </div>
+        </div>
+
+        <!-- Chat Interface -->
+        <div class="chat-container" id="chatContainer">
+          <div class="bot-message">👋 Hi! I’m your AI mentor. What do you want to learn today?</div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+          <input type="text" id="userInput" placeholder="Ask me anything...">
+          <button id="sendBtn" class="btn primary">Send</button>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div class="progress-section">
+          <p>Learning Progress</p>
+          <div class="progress-bar"><div class="progress" data-progress="45"></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="aimentor.js"></script>
+</body>
+</html>

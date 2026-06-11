@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Progress Tracking — Smart Interview Guide</title>
+  <link rel="stylesheet" href="progress.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">★</div>
+        <div class="title">Smart Interview Guide</div>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn toggle">🌙 </button>
+        <!-- <a href="../index.html" class="btn ghost">🏠 Home</a> -->
+      </div>
+    </header>
+
+    <main>
+      <section class="feature-detail">
+        <h1>📈 Progress Tracking Dashboard</h1>
+        <p>Visualize your learning journey, analyze your trends, and stay consistent every day!</p>
+
+        <div class="stats-cards">
+          <div class="card">
+            <h3>✅ Topics Completed</h3>
+            <p class="highlight" id="topics-completed">12 / 20</p>
+          </div>
+          <div class="card">
+            <h3>🔥 Weekly Streak</h3>
+            <p class="highlight" id="weekly-streak">7 Days</p>
+          </div>
+          <div class="card">
+            <h3>🏆 Accuracy</h3>
+            <p class="highlight" id="accuracy">85%</p>
+          </div>
+        </div>
+
+        <div class="chart-row">
+          <div class="chart-card small">
+            <h2>🎯 Skill Distribution</h2>
+            <canvas id="skillChart" width="200" height="200"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <h2>📅 Weekly Performance</h2>
+            <canvas id="trendChart"></canvas>
+          </div>
+        </div>
+
+        <div class="progress-section">
+          <h2>📚 Topic-Wise Progress</h2>
+
+          <div class="progress-item">
+            <span>Data Structures</span>
+            <div class="progress-bar"><div class="fill" id="ds-fill"></div></div>
+          </div>
+
+          <div class="progress-item">
+            <span>Algorithms</span>
+            <div class="progress-bar"><div class="fill" id="algo-fill"></div></div>
+          </div>
+
+          <div class="progress-item">
+            <span>System Design</span>
+            <div class="progress-bar"><div class="fill" id="sd-fill"></div></div>
+          </div>
+
+          <div class="progress-item">
+            <span>DBMS</span>
+            <div class="progress-bar"><div class="fill" id="dbms-fill"></div></div>
+          </div>
+
+          <button id="update-btn" class="btn update">🔄 Update Progress</button>
+        </div>
+
+        <div class="quote-section" id="quote">
+          <!-- Quote dynamically inserted -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Structured Learning — Smart Interview Guide</title>
+  <link rel="stylesheet" href="learning.css" />
+</head>
+<body class="light-mode">
+  <header class="top-bar">
+    <div class="logo">⭐ Smart Interview Guide</div>
+    <nav>
+      <!-- <button href="index.html" class="home-btn">🏠 Home</button> -->
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>📘 Structured Learning</h1>
+    <p class="subtitle">
+      Deep dive into curated modules covering Data Structures, Algorithms, System Design, and more. 
+      Explore interactive lessons, track progress, and prepare smartly for interviews.
+    </p>
+
+    <div class="search-box">
+      <input type="text" placeholder="🔍 Search modules..." id="search" />
+    </div>
+
+    <section class="cards-container" id="modules">
+      <div class="card">
+        <h3>📁 Data Structures</h3>
+        <p>Master Arrays, Linked Lists, Stacks, Queues, Trees, and Graphs with interactive visualizations.</p>
+        <progress value="40" max="100"></progress>
+        <button>Start Learning</button>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Algorithms</h3>
+        <p>Learn Sorting, Searching, Recursion, Dynamic Programming, and Greedy methods step-by-step.</p>
+        <progress value="30" max="100"></progress>
+        <button>Start Learning</button>
+      </div>
+
+      <div class="card">
+        <h3>💡 System Design</h3>
+        <p>Understand Scalability, Load Balancing, Caching, and Real-World Architecture Patterns.</p>
+        <progress value="20" max="100"></progress>
+        <button>Start Learning</button>
+      </div>
+
+      <div class="card">
+        <h3>🧩 OOP Concepts</h3>
+        <p>Learn Object-Oriented Programming principles like Inheritance, Polymorphism, and Encapsulation.</p>
+        <progress value="10" max="100"></progress>
+        <button>Start Learning</button>
+      </div>
+
+      <div class="card">
+        <h3>🗄️ Databases</h3>
+        <p>Explore SQL, NoSQL, indexing, normalization, transactions, and database design essentials.</p>
+        <progress value="25" max="100"></progress>
+        <button>Start Learning</button>
+      </div>
+
+      <div class="card">
+        <h3>🧠 Operating Systems</h3>
+        <p>Understand Processes, Threads, Scheduling, Memory Management, and File Systems deeply.</p>
+        <progress value="35" max="100"></progress>
+        <button>Start Learning</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot Button -->
+  <div id="chatbot-toggle" class="chatbot-toggle">💬</div>
+
+  <!-- Chatbot Window -->
+  <div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+      <span>🤖 Smart Chatbot</span>
+      <button id="close-chat">✖</button>
+    </div>
+    <div class="chatbot-body" id="chat-body">
+      <div class="bot-msg">Hello! 👋 How can I help you today?</div>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn">➤</button>
+    </div>
+  </div>
+
+  <script src="learning.js"></script>
+</body>
+</html>

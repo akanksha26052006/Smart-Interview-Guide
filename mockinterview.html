@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mock Interviews — Smart Interview Guide</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="mockinterview.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">★</div>
+        <div class="title">Smart Interview Guide</div>
+      </div>
+      <div class="nav-actions">
+        <!-- <a href="../index.html" class="btn ghost">🏠 Home</a> -->
+        <button id="theme-toggle" class="btn primary">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="feature-detail">
+        <h1>💬 Mock Interviews</h1>
+        <p>Simulate real-world interviews with AI or peers. Choose topics, difficulty, and company-specific question sets.</p>
+
+        <!-- Filters -->
+        <div class="filters">
+          <select id="companySelect">
+            <option value="">Select Company</option>
+            <option>Google</option>
+            <option>Amazon</option>
+            <option>Meta</option>
+            <option>Microsoft</option>
+            <option>Tesla</option>
+          </select>
+
+          <select id="difficultySelect">
+            <option value="">Select Difficulty</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+
+          <button id="reviewBtn" class="btn secondary">📜 Review Past Interviews</button>
+        </div>
+
+        <!-- Motivational Quote -->
+        <div class="quote-bar" id="quoteBar">🚀 “Believe in yourself — you are halfway there!”</div>
+
+        <!-- Cards -->
+        <div class="content-grid">
+          <div class="module-card">
+            <h3>Technical Rounds</h3>
+            <p>Practice problem-solving, coding, and algorithmic challenges.</p>
+            <button class="btn primary start-btn">Start Mock</button>
+          </div>
+
+          <div class="module-card">
+            <h3>Behavioral Rounds</h3>
+            <p>Prepare for HR questions using structured frameworks like STAR.</p>
+            <button class="btn primary start-btn">Start Mock</button>
+          </div>
+
+          <div class="module-card">
+            <h3>Company-Specific</h3>
+            <p>Get interview insights from top companies and role-based scenarios.</p>
+            <button class="btn primary start-btn">Start Mock</button>
+          </div>
+
+          <div class="module-card">
+            <h3>AI Voice Interview</h3>
+            <p>Experience a real-time voice interview with timer, recorder & review log.</p>
+            <button id="voiceBtn" class="btn primary">🎤 Start Voice Interview</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Voice Interview Modal -->
+  <div id="voiceModal" class="modal">
+    <div class="modal-content voice-content">
+      <h2>🎤 Voice Interview Mode</h2>
+      <p id="questionText">Your interview will begin shortly...</p>
+
+      <textarea id="answerInput" placeholder="Type your answer here..."></textarea>
+
+      <div class="timer" id="timerDisplay">00:30</div>
+      <button id="nextQuestion" class="btn primary">Next Question</button>
+      <button id="endInterview" class="close-btn">End Interview</button>
+    </div>
+  </div>
+
+  <!-- Review Modal -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content review-content">
+      <h2>📜 Interview History</h2>
+      <div id="reviewList"></div>
+      <button id="closeReview" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="mockinterview.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* ===== Light Theme ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9fafc;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 15px 40px;
+  border-radius: 0 0 10px 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 26px;
+  color: #ffb400;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.nav-actions .btn {
+  text-decoration: none;
+  background: #ffb400;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.nav-actions .btn:hover {
+  background: #ff9500;
+}
+
+main {
+  padding: 30px 10%;
+}
+
+.feature-detail h1 {
+  font-size: 28px;
+  color: #2b2b2b;
+}
+
+.feature-detail p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* ===== Post Creation Box ===== */
+.create-post {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+#createPost h2 {
+  margin-bottom: 10px;
+}
+
+#createPost input, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  resize: none;
+}
+
+#createPost button {
+  margin-top: 10px;
+}
+
+#createPost button:hover {
+  background: #ff9500;
+}
+
+#createPost textarea:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+#createPost textarea::placeholder {
+  color: #888;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+/* ===== Posts Section ===== */
+.community-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.post-content {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.action:hover {
+  color: #0077ff;
+}
+
+.comment-box {
+  margin-top: 10px;
+  display: none;
+}
+
+.comment-box input {
+  width: 90%;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.comment-box button {
+  padding: 6px 10px;
+  font-size: 13px;
+  background: #00b894;
+}
+
+.comment {
+  font-size: 14px;
+  background: #f3f6fa;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-top: 5px;
+}

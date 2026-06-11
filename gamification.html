@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gamification — Smart Interview Guide</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="gamification.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">★</div>
+        <div class="title">Smart Interview Guide</div>
+      </div>
+      <div class="nav-actions">
+        <!-- <a href="index.html" class="btn ghost">🏠 Home</a> -->
+        <button id="theme-toggle" class="btn primary">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="feature-detail">
+        <h1>🏆 Gamification</h1>
+        <p>Track your progress with XP, levels, and badges. Compete with friends on the leaderboard!</p>
+
+        <!-- XP & Level -->
+        <div class="xp-section">
+          <h2>🎮 Your Progress</h2>
+          <p><strong>XP:</strong> <span id="xp">0</span> / 100</p>
+          <div class="xp-bar">
+            <div id="xpFill"></div>
+          </div>
+          <p><strong>Level:</strong> <span id="level">1</span></p>
+          <button id="gainXpBtn" class="btn primary">Gain XP 💪</button>
+        </div>
+
+        <!-- Badges -->
+        <div class="badges-section">
+          <h2>🏅 Your Badges</h2>
+          <div class="badges" id="badgeList"></div>
+        </div>
+
+        <!-- Leaderboard -->
+        <div class="leaderboard-section">
+          <h2>📈 Leaderboard</h2>
+          <table class="leaderboard" id="leaderboard">
+            <thead>
+              <tr><th>Rank</th><th>Name</th><th>Level</th><th>XP</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <button id="resetLeaderboard" class="btn secondary">🔄 Reset Leaderboard</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="gamification.js"></script>
+</body>
+</html>
